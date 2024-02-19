@@ -24,18 +24,6 @@ function displayMetadata(sample) {
             PANEL.append("h6").text(`${key.toUpperCase()}: ${result[key]}`);
         };
 
-        // Select the metadata div
-        //let metadataDiv = d3.select("#sample-metadata");
-        // Clear previous content
-        //metadataDiv.html("");
-        
-        // Append metadata key-value pairs as paragraphs
-        //Object.entries(metadata).forEach(([key, value]) => {
-          //  metadataDiv.append("p").text(`${key}: ${value}`);
-        //});
-    //}).catch(error => {
-      //  console.error("Error fetching metadata:", error);
-    //
     });
 }
 
@@ -128,28 +116,7 @@ function createBubbleChart(sampleId) {
 }
 
 
-//4. Display the sample metadata, i.e., an individual's demographic information.
 
-// // Function to fetch and display sample metadata
-// function displayMetadata(sampleId) {
-//     d3.json(url).then(data => {
-//         // Find the metadata for the selected sampleId
-//         let metadata = data.metadata.find(metadata => metadata.id == sampleId);
-        
-//         // Select the metadata div
-//         let metadataDiv = d3.select("#sample-metadata");
-        
-//         // Clear previous content
-//         metadataDiv.html("");
-        
-//         // Append metadata key-value pairs as paragraphs
-//         Object.entries(metadata).forEach(([key, value]) => {
-//             metadataDiv.append("p").text(`${key}: ${value}`);
-//         });
-//     }).catch(error => {
-//         console.error("Error fetching metadata:", error);
-//     });
-// }
 
 // Call the displayMetadata function when the dropdown selection changes
 function init() {
@@ -174,39 +141,6 @@ function optionChanged(newSample){
 init();
 
 
-//5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-// // Function to fetch and display sample metadata
-// function displayMetadata(sampleId) {
-//     d3.json(url).then(data => {
-//         // Find the metadata for the selected sampleId
-//         let metadata = data.metadata.find(metadata => metadata.id == sampleId);
-        
-//         // Select the container where you want to display the metadata
-//         let metadataContainer = d3.select("#metadata-container");
-        
-//         // Clear previous content
-//         metadataContainer.html("");
-        
-//         // Append metadata key-value pairs as list items
-//         Object.entries(metadata).forEach(([key, value]) => {
-//             metadataContainer.append("p").text(`${key}: ${value}`);
-//         });
-//     }).catch(error => {
-//         console.error("Error fetching metadata:", error);
-//     });
-// }
-// // Call the displayMetadata function when the dropdown selection changes
-// function optionChanged(value) {
-//     createbargraph(value);
-//     createBubbleChart(value);
-//     displayMetadata(value); 
-// }
-
-//6. Update all the plots when a new sample is selected.
-
-//7. Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to 
-// your deployment and your GitHub repo. Ensure that your repository has regular commits and a 
-// thorough README.md file
 
 
